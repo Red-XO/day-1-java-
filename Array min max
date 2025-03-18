@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Min_Val {
+public static void main(String args[]) {
+	Scanner sc = new Scanner(System.in);
+	int b[]=new int[40];
+	System.out.println("enter a size of array");
+	int size = sc.nextInt();
+	for(int i=0;i<size;i++) {
+	 b[i] = sc.nextInt();	
+	}
+	int min = b[0];
+	int max =b[0];
+	for(int i=1;i<b.length;i++) {
+		if(b[i] < min) {
+			min = b[i];
+		}
+		if(b[i] > max) {
+			max =b[i];
+		}
+	}
+		System.out.println("min = "+min);
+		System.out.println("max = "+max);
+	
+
+}
+}
